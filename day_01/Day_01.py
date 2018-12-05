@@ -12,17 +12,17 @@ class Tuner:
     def __init__(self, freq=0):
         self.freq = freq
         self.history = {}
-        self.update_history(self.freq)
+        self.__update_history(self.freq)
 
     def tune_up(self, steps):
         self.freq += steps
-        self.update_history(self.freq)
+        self.__update_history(self.freq)
 
     def tune_down(self, steps):
         self.freq -= steps
-        self.update_history(self.freq)
+        self.__update_history(self.freq)
 
-    def update_history(self, freq):
+    def __update_history(self, freq):
         if self.history.get(freq) == None:
             self.history[freq] = 1
         else: 
