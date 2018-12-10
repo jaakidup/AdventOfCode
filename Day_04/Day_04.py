@@ -116,36 +116,3 @@ for id in schedule.guards:
 
 print("{ part Deux }", who * what_time)
 
-
-
-
-
-
-
-
-
-
-
-# schedule = Schedule()
-# guard1, guard2, guard3, guard4, guard5, guard6  = Guard(1),Guard(2),Guard(3),Guard(4),Guard(5),Guard(6)
-# schedule.add_guard(guard1)
-# schedule.add_guard(guard2)
-# schedule.add_guard(guard3)
-# schedule.add_guard(guard4)
-# schedule.add_guard(guard5)
-# schedule.add_guard(guard6)
-
-
-# schedule.guards[1].go_to_sleep(7)
-# schedule.guards[1].wake_up(45)
-# schedule.guards[1].go_to_sleep(16)
-# schedule.guards[1].wake_up(17)
-# schedule.guards[1].go_to_sleep(15)
-# schedule.guards[1].wake_up(34)
-
-# # start, end = 58, 59
-# # for time in range(end - start):
-# #     schedule.guards[1].times[start + time] += 1
-
-# print(schedule.guards[1].times)
-# print(schedule.guards[1].most_asleep())
